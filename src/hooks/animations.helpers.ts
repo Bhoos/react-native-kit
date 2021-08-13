@@ -46,7 +46,7 @@ export async function scaleAndFlip({ rotateY, scaleXY }: DriverType) {
       createSpring(rotateY, 180),
       createSpring(scaleXY, 1.3),
       Animated.delay(1500),
-    ]).start(res => resolve());
+    ]).start(res => resolve(res));
   });
 }
 
